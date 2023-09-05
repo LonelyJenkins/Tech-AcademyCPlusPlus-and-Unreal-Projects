@@ -20,6 +20,10 @@ class Rectangle : public Shape
 public:
 	int height;
 	int width;
+	void getArea()
+	{
+		cout << "The area of this " + color + " rectangle is..." << height * width;
+	}
 };
 
 class Triangle : public Shape
@@ -27,12 +31,20 @@ class Triangle : public Shape
 public:
 	int base;
 	int height;
+	void getArea()
+	{
+		cout << "The area of this " + color + " triangle is..." << (base/2) * height;
+	}
 };
 
 class Circle : public Shape
 {
 public:
 	int radius;
+	void getArea()
+	{
+		cout << "The area of this " + color + " circle is..." << 3.14 * (radius*radius) ;
+	}
 };
 
 int main()
@@ -41,15 +53,18 @@ int main()
 	rectangle.color = "pink";
 	rectangle.height = 10;
 	rectangle.width = 50;
+	rectangle.getArea();
 
 	Triangle triangle;
 	triangle.color = "orange";
 	triangle.base = 11;
 	triangle.height = 15;
+	triangle.getArea();
 
 	Circle circle;
 	circle.color = "brown";
 	circle.radius = 19;
+	circle.getArea();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
