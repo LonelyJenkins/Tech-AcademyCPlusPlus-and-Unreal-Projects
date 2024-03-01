@@ -16,12 +16,12 @@ public:
 
     void Shake()
     {
-        cout << name + " shakes their body gracefully";
+        cout << name + " shakes their body gracefully ";
     }
 
     void Sit()
     {
-        cout << name + " sits down gracedully, like a good " + breed;
+        cout << name + " sits down gracefully, like a good " + breed;
     }
 
     void LayDown()
